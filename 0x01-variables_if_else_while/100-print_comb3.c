@@ -15,10 +15,15 @@ int main(void)
 		{
 		if ((m != n) & (n < m))
 		{
+			{
 			putchar(n);
 			putchar(m);
+			}
+			if (m < 9)
+			{
 			putchar(',');
 			putchar(' ');
+			}
 		}
 		}
 	}
