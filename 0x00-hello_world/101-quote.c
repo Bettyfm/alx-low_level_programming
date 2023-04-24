@@ -10,6 +10,9 @@ int main(void)
 	int i;
 
 	for (i = 0; d[i] != '\0'; i++)
+		{
 		putchar(d[i]);
+		}
+	putchar('\n');
 	return (1);
 }
