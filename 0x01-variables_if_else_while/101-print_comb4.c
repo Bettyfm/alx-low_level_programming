@@ -18,7 +18,7 @@ int main(void)
 		{
 			for (l = '2'; l <= '9'; l++)
 			{
-			if ((m != n != l) & (n < m < l))
+			if ((m != n )& (m != l) & (n < m) & (m < l))
 			{
 			putchar(n);
 			putchar(m);
