@@ -6,8 +6,7 @@
  */
 int main(void)
 {
-	int n;
-	int m;
+	int n = 0. m;
 
 	while (n <= 99)
 	{
