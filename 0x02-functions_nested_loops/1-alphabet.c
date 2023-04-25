@@ -1,10 +1,10 @@
 #include"main.h"
 /**
- * main - Entry point
+ * print_alphabet - function that prints alphabet
  *
- * print_alphabet - is a function that doesnt need arguments but print alphabet
+ * parameter: void function no parameter
  *
- * void function requires no return
+ * Return: void function no return
  */
 void print_alphabet(void)
 {
