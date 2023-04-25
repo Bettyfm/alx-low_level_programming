@@ -8,12 +8,11 @@
  */
 int _abs(int)
 {
-	int ab;
 
 	if (int < 0)
-	ab = int * -1
-	return (ab);
+	{
+	return (-int);
+	}
 	else
-	_putchar('int');
-	return (0);
+	return (int);
 }
