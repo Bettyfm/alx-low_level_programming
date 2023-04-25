@@ -6,9 +6,10 @@
  *
  * Return: last digit
  */
-int print_last_digit(int)
+int print_last_digit(int m)
 {
-	int m;
-	m = int % 10;
-	return (m);
+	int n;
+
+	n = m % 10;
+	return (n);
 }
