@@ -1,14 +1,16 @@
 #include"main.h"
 /**
- * function to print alphabet
+ * main - Entry point
  *
- * return: always 0
+ * print_alphabet is a function that doesnt need arguments but print alphabet
+ *
+ * void function requires no return
  */
 void print_alphabet(void)
 {
 	char c;
 
-	for(c = 'a'; c <= 'z'; c++)
+	for (c = 'a'; c <= 'z'; c++)
 		_putchar(c);
 	_putchar('\n');
 
