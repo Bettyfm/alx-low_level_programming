@@ -2,7 +2,7 @@
 /**
  * main - Entry point
  *
- * print_alphabet is a function that doesnt need arguments but print alphabet
+ * print_alphabet - is a function that doesnt need arguments but print alphabet
  *
  * void function requires no return
  */
