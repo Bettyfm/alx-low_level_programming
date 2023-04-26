@@ -9,6 +9,7 @@ int main(void)
 	int n = 1, m = 2, l, i;
 
 	for (i = 0; i < 50; i++)
+	{
 		printf("%d", n);
 		l = n + m;
 		n = m;
@@ -17,5 +18,6 @@ int main(void)
 			printf("\n");
 		else
 			printf(", ");
-
+	}
+	return (0);
 }
