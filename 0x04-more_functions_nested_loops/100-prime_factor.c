@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 /**
- * main - entry point
+ * main - Entry point
  *
  * retur: always 0 (success)
  */
@@ -28,7 +28,7 @@ int main(void)
 			n = n / l;
 		}
 	}
-	if (n > 2);
+	if (n > 2)
 		m = n;
 	printf("%ld\n", m);
 	return (0);
