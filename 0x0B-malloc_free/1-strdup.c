@@ -3,9 +3,9 @@
 #include <stdlib.h>
 
 /**
- * *_strdup - fnction that copy a strg
+ * _strdup - fnction that copy a strg
  * @str: string to be copied
- * return: copy or string on success NULL on failure
+ * Return: fstr on success NULL on failure
  */
 char *_strdup(char *str)
 {
