@@ -11,7 +11,7 @@
 int main(int argc, char *argv[])
 {
 	int i;
-	int add;
+	int add = 0;
 
 	if (argc == 1)
 	{
@@ -20,15 +20,14 @@ int main(int argc, char *argv[])
 	else
 	{
 		for (i = 0; i < argc; i++)
-			if (isdigit(atoi(argv[i])) == 0)
+			if (isdigit(atoi(argv[i])) != 0)
 			{
-				printf("Error\n");
-				return (1);
+				add = add + atoi(argv[i]);
 			}
 			else
 			{
-				add = add + atoi(argv[i]);
-				i++;
+				printf("Error\n");
+				return (1);
 			}
 	}
 	return (0);
