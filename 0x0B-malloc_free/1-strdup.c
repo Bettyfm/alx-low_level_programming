@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * *_strdup - fnction that copy a strg
@@ -16,7 +17,7 @@ char *_strdup(char *str)
 		return (NULL);
 	while (str[i] != '\0')
 		i++;
-	fstr = malloc(sizeof(char) * i + 1);
+	fstr = malloc(sizeof(char) * (i + 1));
 
 	if (fstr == 0)
 	{
