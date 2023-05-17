@@ -13,9 +13,9 @@ char *_strdup(char *str)
 
 	if (str == 0)
 		return (NULL);
-	while (str <= '\0')
+	while (str < '\0')
 		i++;
-	fstr = malloc(sizeof(char) * i);
+	fstr = malloc(sizeof(char) * i + 1);
 
 	if (fstr == 0)
 	{
@@ -23,7 +23,7 @@ char *_strdup(char *str)
 	}
 	else
 	{
-		for (j = 0; j <= i; j++)
+		for (j = 0; j < i + 1; j++)
 			fstr[j] = str[j];
 		return (fstr);
 	}
