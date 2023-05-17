@@ -13,7 +13,7 @@ char *create_array(unsigned int size, char c)
 {
 	char *ar;
 
-	if ((size != 0) && (ar != 0))
+	if (size != 0)
 	{
 		ar = malloc(sizeof(c) * size);
 		while (size--)
@@ -21,6 +21,6 @@ char *create_array(unsigned int size, char c)
 		return (ar);
 	}
 
-	else
+	else if ((size == 0)||(ar == 0))
 	return (NULL);
 }
