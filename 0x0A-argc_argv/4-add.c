@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
 {
 	int i;
 	unsigned long int j;
-	int add;
+	int add = 0;
 	char *a;
 
 	if (argc == 0)
