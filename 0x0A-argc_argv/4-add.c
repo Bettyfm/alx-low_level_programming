@@ -16,23 +16,27 @@ int main(int argc, char *argv[])
 	int add = 0;
 	char *a;
 
-	if (argc == 0)
-		printf("0\n");
-	else
+	if (argc > 1)
 	{
 	for (i = 0; i < argc; i++)
 	{
 		a = argv[i];
 
 		for (j = 0; j < strlen(a); j++)
+		{
 			if (a[j] < '0' || a[j] > '9')
 			{
 				return (printf("Error\n"), 1);
 			}
+		}
 		add = add + atoi(a);
 		a++;
 	}
 	printf("%d\n", add);
+	}
+	else
+	{
+		printf("0\n");
 	}
 	return (0);
 }
