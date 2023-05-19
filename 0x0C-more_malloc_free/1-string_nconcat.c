@@ -20,14 +20,14 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
-	while (s1[len1] <= '\0')
+	while (s1[len1] != '\0')
 		len1++;
-	while (s2[len2] <= '\0')
+	while (s2[len2] != '\0')
 		len2++;
 	st = malloc(len1 + n + 1);
 	if (st == NULL)
 	{
-		return(NULL);
+		return (NULL);
 	}
 	for (i = 0; s1[i] != '\0'; i++)
 		st[i] = s1[i];
