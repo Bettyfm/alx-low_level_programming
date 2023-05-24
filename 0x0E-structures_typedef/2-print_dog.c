@@ -9,7 +9,7 @@
 void print_dog(struct dog *d)
 {
 	if ((d->name == NULL) || (d->owner == NULL))
-		printf("(nil)")
+		printf("(nil)");
 	d = malloc(sizeof(struct dog))
 	if (d == NULL)
 		;
