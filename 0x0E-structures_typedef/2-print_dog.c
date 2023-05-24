@@ -12,7 +12,6 @@ void print_dog(struct dog *d)
 		d->name = "(nil)";
 	if (d->owner == NULL)
 		d->owner = "(nil)";
-	d = malloc(sizeof(struct dog));
 	if (d == NULL)
 	{
 		return;
