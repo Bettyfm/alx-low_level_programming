@@ -14,7 +14,9 @@ void print_dog(struct dog *d)
 		d->owner = "(nil)";
 	d = malloc(sizeof(struct dog));
 	if (d == NULL)
+	{
 		return;
+	}
 	printf("Name: %s\nAge: %.6f\nOwner: %s\n", d->name, d->age, d->owner);
 
 }
