@@ -1,1 +1,0 @@
- function malloc and free
