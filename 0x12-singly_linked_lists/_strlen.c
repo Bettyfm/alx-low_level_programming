@@ -1,5 +1,5 @@
 #include "lists.h"
-int _strlen(char *s)
+int _strlen( char *s)
 {
 	int lenght = 0;
 
