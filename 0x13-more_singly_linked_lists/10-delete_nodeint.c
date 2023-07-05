@@ -3,11 +3,11 @@
 #include <stdlib.h>
 
 /**
- * delete_nodeint_at_index - func that del node
- * @head: ptr to first node
- * @index: numb to delte
+ * delete_nodeint_at_index - fun
+ * @head: first node
+ * @index: index
  *
- * Return: 1 on success -1 fail
+ * Return: 1 success -1 fail
  */
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
@@ -15,7 +15,8 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	listint_t *oldnode;
 	unsigned int idx;
 
-	idx = 0;
+	if (!head || !*head)
+		return (-1);
 	if (index == 0)
 	{
 		currnode = *head;
@@ -23,19 +24,19 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 		free(currnode);
 		return (1);
 	}
-	currnode = *head;
-	while (currnode)
+
+	oldnode = *head;
+	for (idx = 0; oldnode && idx < index - 1; idx++)
 	{
-		if (idx == index)
-		{
-			oldnode->next = currnode->next;
-			free(currnode);
-			return (1);
-		}
-		idx++;
-		oldnode = currnode;
-		currnode = currnode->next;
+		oldnode = oldnode->next;
+	}
+
+	if (oldnode && oldnode->next)
+	{
+		currnode = oldnode->next;
+		oldnode->next = currnode->next;
+		free(currnode);
+		return (1);
 	}
 	return (-1);
-
 }
