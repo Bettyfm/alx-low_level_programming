@@ -2,11 +2,11 @@
 #include <fcntl.h>
 #include <unistd.h>
 #include <stdlib.h>
-
+#define BUFFER_SIZE 1024
 /**
- * main - entry point of the program
- * @argc: the number of arguments
- * @argv: an array of argument strings
+ * main - entry point 
+ * @argc: the number of args
+ * @argv: arguments vector
  *
  * Return: 0 on success, 97-100 on failure
  */
