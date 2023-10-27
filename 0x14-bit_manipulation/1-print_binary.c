@@ -7,7 +7,7 @@
  */
 void print_binary(unsigned long int n)
 {
-	unsigned int m;
+	unsigned long int m = 0;
 
 	for (m = 1 << 31; m > 0; m = m / 2)
 		if (n & m)
