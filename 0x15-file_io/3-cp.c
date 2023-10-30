@@ -32,7 +32,7 @@ int main(int argc, char *argv[])
 		exit(99);
 	}
 
-	while ((bytrd = read(fd_from, buffer, BUFFER_SIZE)) > 0)
+	while ((bytrd = read(fd_from, buffer, BUFFERSIZE)) > 0)
 	{
 		bytwr = write(fd_to, buffer, bytrd);
 		if (bytwr == -1)
