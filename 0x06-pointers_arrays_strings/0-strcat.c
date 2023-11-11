@@ -1,12 +1,14 @@
 #include "main.h"
 
+
+int _strlen(char *s);
+
 /**
  * _strcat - string concatinate func
  * @dest: string destination of concate
  * @src: string source to be concatinated
  * Return: ptr to final string
  */
-int _strlen(char *s);
 char *_strcat(char *dest, char *src)
 {
 	int n;
@@ -19,7 +21,7 @@ char *_strcat(char *dest, char *src)
 		dest[n] = src[m];
 			n++;
 	}
-	return(dest);
+	return (dest);
 
 }
 
